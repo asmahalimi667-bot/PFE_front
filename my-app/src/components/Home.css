@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b1f3a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #cfd8dc;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00e5ff;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.login {
+  background: transparent;
+  color: white;
+}
+
+.get-started {
+  background: #00e5ff;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  min-height: 90vh;
+}
+
+/* TEXT */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #b0bec5;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons button {
+  margin-right: 10px;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-main {
+  background: #00e5ff;
+  color: black;
+  border: none;
+}
+
+.btn-main:hover {
+  background: #00bcd4;
+}
+
+.btn-outline {
+  border: 1px solid #00e5ff;
+  background: transparent;
+  color: #00e5ff;
+}
+
+.btn-outline:hover {
+  background: #00e5ff;
+  color: black;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 400px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
