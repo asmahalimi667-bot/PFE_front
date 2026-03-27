@@ -1,7 +1,5 @@
-// src/components/Home.jsx
 import React from "react";
 import "./Home.css";
-import heroImage from "../assets/hero.png";
 
 const Home = () => {
   return (
@@ -9,48 +7,89 @@ const Home = () => {
 
       {/* Navbar */}
       <nav className="navbar">
-        <h1 className="logo">StartupSim</h1>
+        <h2 className="logo">StartupSim</h2>
 
-        <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Features</a>
-          <a href="#">Simulation</a>
-          <a href="#">Contact</a>
-        </div>
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#simulation">Simulation</a></li>
+        </ul>
 
-        <div className="nav-buttons">
-          <button className="login">Login</button>
-          <button className="get-started">Get Started</button>
-        </div>
+        <button className="btn">Start</button>
       </nav>
 
-      {/* Hero */}
-      <section className="hero">
-        
-        {/* Left */}
+      {/* Hero Section */}
+      <section id="home" className="hero">
         <div className="hero-text">
-          <h2>
-            Transform Your Startup <br />
-            Into Smart Decisions
-          </h2>
-
+          <h1>
+            Design of a Simulation Platform for Startup Failure & Risk Awareness
+          </h1>
           <p>
-            Analyze, simulate, and predict startup failure using AI,
-            decision trees, and intelligent risk models.
+            Analyze your startup using AI Decision Tree, Rule-Based System, and Mathematical Risk Models.
           </p>
 
           <div className="hero-buttons">
-            <button className="btn-main">Get Started</button>
-            <button className="btn-outline">Watch Demo</button>
+            <a href="#simulation" className="btn primary">Start Simulation</a>
+            <a href="#features" className="btn outline">View Demo</a>
           </div>
         </div>
-
-        {/* Right */}
-        <div className="hero-image">
-          <img src={heroImage} alt="AI Illustration" />
-        </div>
-
       </section>
+
+      {/* Methods Section */}
+      <section id="features" className="methods">
+        <h2>Simulation Methods</h2>
+
+        <div className="cards">
+          <div className="card">
+            <h3>🌳 AI Decision Tree</h3>
+            <p>Predict startup success using machine learning model and probability.</p>
+          </div>
+
+          <div className="card">
+            <h3>📏 Rule-Based System</h3>
+            <p>Evaluate startup using IF/THEN expert rules with clear explanations.</p>
+          </div>
+
+          <div className="card">
+            <h3>🧮 Mathematical Model</h3>
+            <p>Calculate a risk score based on a weighted mathematical formula.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* How / Simulation Section */}
+      <section id="simulation" className="how">
+        <h2>How It Works</h2>
+
+        <div className="steps">
+          <div className="step">
+            <span>1</span>
+            <p>Enter startup variables</p>
+          </div>
+
+          <div className="step">
+            <span>2</span>
+            <p>Select simulation method</p>
+          </div>
+
+          <div className="step">
+            <span>3</span>
+            <p>Get results & recommendations</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="cta">
+        <h2>Ready to simulate your startup?</h2>
+        <button className="btn primary">Start Now</button>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>© 2026 StartupSim - PFE Project</p>
+      </footer>
+
     </div>
   );
 };
